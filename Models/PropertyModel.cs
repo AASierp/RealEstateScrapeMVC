@@ -1,0 +1,29 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+
+namespace RealEstateScrapeMVC.Models
+{
+    public class PropertyModel
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public string County { get; set; }    
+
+        public string Url { get; set; }
+
+        public string Address { get; set; }
+
+        public int Price { get; set; }
+
+        public int SqureFeet  { get; set; }
+
+        public int LotSize { get; set; }
+
+        public string Description { get; set; }
+
+        public string ImgUrl { get; set; }
+
+    }
+}

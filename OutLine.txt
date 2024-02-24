@@ -1,0 +1,6 @@
+﻿User fills fields
+field data populates model -> scraping logic or -> db?
+in the case of db, info is sent from db to scraping logic. this would allow for saved search criteria but would also require 
+individual accounts (auth).
+results of scraping are then sent to a view and db or straigh to db and then from db to view?
+
