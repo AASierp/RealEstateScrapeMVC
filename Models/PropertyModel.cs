@@ -11,13 +11,15 @@ namespace RealEstateScrapeMVC.Models
 
         public string County { get; set; }    
 
+        public string DateListed { get; set; }
+
         public string Url { get; set; }
 
         public string Address { get; set; }
 
         public int Price { get; set; }
 
-        public int SqureFeet  { get; set; }
+        public int SquareFeet  { get; set; }
 
         public int LotSize { get; set; }
 

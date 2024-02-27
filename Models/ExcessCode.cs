@@ -1,4 +1,4 @@
-﻿/*using HtmlAgilityPack;
+﻿using HtmlAgilityPack;
 using System.Text.RegularExpressions;
 
 namespace RealEstateScrapeMVC.Models
@@ -113,4 +113,61 @@ namespace RealEstateScrapeMVC.Models
     }
 
 }
-*/
+
+
+/*public ActionResult PopulatePriceList()
+        {
+            PropertySearchModel propertySearchModelPrice = new PropertySearchModel
+            {
+                PriceRanges = new List<SelectListItem>
+                {
+                    new SelectListItem {Value = "0 - 250,000", Text = "$0 - $250,000"},
+                    new SelectListItem {Value = "250,000 - 450,000", Text = "$250,000 - $450,000"},
+                    new SelectListItem {Value = "450,000 - 650,000", Text = "$450,000 - $650,000"},
+                    new SelectListItem {Value = "650,000 - 850,000", Text = "$650,000 - $850,000"},
+                    new SelectListItem {Value = "850,000 - 1,000,000", Text = "$850,000 - $1,000,000"},
+                }
+            };
+
+            return View(propertySearchModelPrice);
+        }
+
+        public ActionResult PopulateSqftList()
+        {
+            PropertySearchModel propertySearchModelSqft = new PropertySearchModel
+            {
+                SqftRanges = new List<SelectListItem>
+                {
+                    new SelectListItem {Value = "0 - 1,000", Text = "0 - 1,000 sqft"},
+                    new SelectListItem {Value = "1,000 - 2,000", Text = "1,000 - 2,000 sqft"},
+                    new SelectListItem {Value = "2,000 - 3,000", Text = "2,000 - 3,000 sqft"},
+                    new SelectListItem {Value = "3,000 - 4,000", Text = "3,000 - 4,000 sqft"},
+                    new SelectListItem {Value = "4,000 - 5,000", Text = "4,000 - 5,000 sqft"},
+                }
+            };
+
+            return View(propertySearchModelSqft);
+        }
+
+        public ActionResult PopulateLotSizeList() 
+        {
+            PropertySearchModel propertySearchModelLotSize = new PropertySearchModel
+            {
+                LotSizeRanges = new List<SelectListItem>
+                {
+                    new SelectListItem {Value = "0 - 2", Text = "0 - 2 acres"},
+                    new SelectListItem {Value = "2 - 5", Text = "2 - 5 acres"},
+                    new SelectListItem {Value = "5 - 10", Text = "5 - 10 acres"},
+                    new SelectListItem {Value = "10 - 100", Text = "10 - 100 acres"},
+                }
+            };
+
+            return View(propertySearchModelLotSize);*/
+//}        
+
+
+
+/*< div class= "form-check" >
+  < input type = "checkbox" class= "form-check-input" id = "exampleCheck1" >
+  < label class= "form-check-label" for= "exampleCheck1" > Check me out</ label >
+</ div >*/

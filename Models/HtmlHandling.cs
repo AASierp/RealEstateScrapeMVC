@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using NuGet.Protocol.Core.Types;
 using System.Text.RegularExpressions;
 
 
@@ -15,7 +16,7 @@ namespace RealEstateScrapeMVC.Models
             return htmlDocument;
         }
 
-        public static string ParseHtmlDoc(HtmlDocument htmlDocument)
+        public static PropertyModel ParseHtmlDoc(HtmlDocument htmlDocument)
         {
             List<HtmlNode> propertyInfoNodes = new List<HtmlNode>
         {
@@ -34,15 +35,17 @@ namespace RealEstateScrapeMVC.Models
                 listingInfoTrimmed.Add(node.InnerText.Trim());
             }
 
-            string address = listingInfoTrimmed[0];
-            string price = listingInfoTrimmed[1];
-            string date = listingInfoTrimmed[2];
+            PropertyModel propertyModel = new PropertyModel();
+
+            propertyModel.Address = listingInfoTrimmed[0];
+            propertyModel.Price = int.Parse(listingInfoTrimmed[1]);
+            propertyModel.DateListed = listingInfoTrimmed[2];
             string sqft = listingInfoTrimmed[3];
             string lot = listingInfoTrimmed[4];
-            string description = listingInfoTrimmed[5];
+            propertyModel.Description = listingInfoTrimmed[5];
 
             string targetWord = "Sq. Feet:";
-            string pattern = $@"\b{Regex.Escape(targetWord)}\b(.+$)\b(.+?)\b(.+?)\b";
+            string pattern = $@"{Regex.Escape(targetWord)}\s*([^\s]+)";
 
             string targetWord2 = "Lot Size:";
             string pattern2 = $@"\b{Regex.Escape(targetWord2)}\b(.+?)\b(.+?)\b(.+?)\b";
@@ -53,9 +56,10 @@ namespace RealEstateScrapeMVC.Models
             Match match2 = Regex.Match(lot, pattern2);
             lot = match2.Groups[0].Value;
 
-            string completeListing = (address + "\n" + price + "\n" + sqft + "\n" + lot + "\n" + date + "\n\n" + description + "\n\n");
+            propertyModel.SquareFeet = int.Parse(sqft);
+            propertyModel.LotSize = int.Parse(lot);
 
-            return completeListing;
+            return propertyModel;
 
         }
     }
