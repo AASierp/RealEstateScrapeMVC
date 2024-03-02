@@ -1,14 +1,11 @@
 ﻿using HtmlAgilityPack;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 
 namespace RealEstateScrapeMVC.Models
 {
     public class ScrapingLogic
     {
-        List<string> countyList = new List<string>()
+        private List<string> countyList = new List<string>()
         {
             "Adair", "Allen", "Anderson", "Ballard", "Barren",
             "Bath", "Bell", "Boone", "Bourbon", "Boyd",
@@ -35,18 +32,40 @@ namespace RealEstateScrapeMVC.Models
             "Trigg", "Trimble", "Union", "Warren", "Washington",
             "Wayne", "Webster", "Whitley", "Wolfe", "Woodford"
         };
-        
-        public static async Task Scrape(List<string> countyList)
+
+        public async Task<List<string>> ScrapeListingUrls(List<string> countyList)
+        {
+            List<string> allListingUrls = new List<string>();
+
+            foreach (string county in countyList)
+            {
+
+                string countyUrl =$"https://www.joehaydenrealtor.com/{county}-county-ky/";
+
+                string htmlContent = await ClientRequest.MakeHttpRequestAsync(countyUrl);
+
+                HtmlDocument htmlDocument = HtmlHandling.CreateHtmlDoc(htmlContent);
+
+                List<string> listingUrls = HtmlHandling.ParseHtmlForListingUrls(htmlDocument);
+
+                allListingUrls.AddRange(listingUrls);
+            }
+
+            return allListingUrls;
+        }
+
+        public async Task ScrapeListingInfo(List<string> allListingUrls)
         {
             using (PropertyContext propertyContext = new PropertyContext())
+
             {
-                foreach (string county in countyList)
+                foreach (string listingUrl in allListingUrls)
                 {
-                    string htmlContent = await ClientRequest.MakeHttpRequestAsync(county);
+                    string htmlContent = await ClientRequest.MakeHttpRequestAsync(listingUrl);
 
                     HtmlDocument htmlDocument = HtmlHandling.CreateHtmlDoc(htmlContent);
 
-                    PropertyModel propertyModel = HtmlHandling.ParseHtmlDoc(htmlDocument);
+                    PropertyModel propertyModel = HtmlHandling.ParseIndividualListingInfo(htmlDocument);
 
                     propertyContext.PropertyModels.Add(propertyModel);
                 }

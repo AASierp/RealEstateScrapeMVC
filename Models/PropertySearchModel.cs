@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata;
 
 namespace RealEstateScrapeMVC.Models
 {
@@ -9,14 +10,6 @@ namespace RealEstateScrapeMVC.Models
         [Key]
         public int Id { get; set; }
         public string County { get; set; }
-
-        public static int MinPriceOne = 0;
-        public static int MaxPriceOne = 250000;
-        public static int MaxPriceTwo = 450000;
-        public static int MaxPriceThree = 650000;
-        public static int MaxPriceFour = 850000;
-        public static int MaxPriceFive = 1000000;
-
 
         public List<SelectListItem> CountyList = new List<SelectListItem>()
         {
@@ -147,6 +140,15 @@ namespace RealEstateScrapeMVC.Models
              new SelectListItem {Value =  "5 - 10", Text = "5 - 10 acres"},
              new SelectListItem {Value = "10 - 100", Text = "10 - 100 acres"},
         };
+
+        public const int MinPriceOne = 0;
+        public const int MaxPriceOne = 250000;
+        public const int MaxPriceTwo = 450000;
+        public const int MaxPriceThree = 650000;
+        public const int MaxPriceFour = 850000;
+        public const int MaxPriceFive = 1000000;
+
+        public const
     }
 }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealEstateScrapeMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3992096248582755e3102aaba514a3930bf38c26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f9d3e8c14b6416e0adcefa9ca63e078666cf95")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealEstateScrapeMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealEstateScrapeMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

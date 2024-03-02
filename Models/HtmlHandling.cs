@@ -1,5 +1,6 @@
 ﻿using HtmlAgilityPack;
 using NuGet.Protocol.Core.Types;
+using System.Net.Http;
 using System.Text.RegularExpressions;
 
 
@@ -16,7 +17,21 @@ namespace RealEstateScrapeMVC.Models
             return htmlDocument;
         }
 
-        public static PropertyModel ParseHtmlDoc(HtmlDocument htmlDocument)
+        public static List<string> ParseHtmlForListingUrls(HtmlDocument htmlDocument) 
+        {
+            //Selects nodes by Tag from HTML doc and adds them to a node list (in this case all the URLs).
+            HtmlNodeCollection allPageLinks = htmlDocument.DocumentNode.SelectNodes("//div[@data-url]");
+
+            //Isolates actual tag Value
+            List<string> homeListingLinks = allPageLinks.Select(link => link.Attributes["data-url"].Value).ToList();
+
+            //Takes top 10 listing links and concatenates them to produce a usable link.
+            List<string> allListingUrls = homeListingLinks.Select(link => "https://www.joehaydenrealtor.com" + link).ToList();
+
+            return allListingUrls;
+        }
+
+        public static PropertyModel ParseIndividualListingInfo(HtmlDocument htmlDocument)
         {
             List<HtmlNode> propertyInfoNodes = new List<HtmlNode>
         {

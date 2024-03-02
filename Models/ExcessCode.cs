@@ -1,8 +1,9 @@
-﻿using HtmlAgilityPack;
+﻿/*using HtmlAgilityPack;
 using System.Text.RegularExpressions;
 
 namespace RealEstateScrapeMVC.Models
 {
+    $"https://www.joehaydenrealtor.com/{countyName}-county-ky/";
     public class ExcessCode
     {
         //Fake user agent
@@ -112,7 +113,7 @@ namespace RealEstateScrapeMVC.Models
         }
     }
 
-}
+}*/
 
 
 /*public ActionResult PopulatePriceList()

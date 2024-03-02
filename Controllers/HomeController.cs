@@ -15,6 +15,7 @@ namespace RealEstateScrapeMVC.Controllers
             _logger = logger;
         }
 
+
         public IActionResult SearchResults()
         {
             return View();
