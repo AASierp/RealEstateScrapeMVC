@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53632A6E-6759-4E12-BBE6-5B137CE1FB45}|..\\DataBaseLayer\\DataBaseLayer.csproj|c:\\users\\aaron\\desktop\\capstone\\databaselayer\\propertycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53632A6E-6759-4E12-BBE6-5B137CE1FB45}|..\\DataBaseLayer\\DataBaseLayer.csproj|c:\\users\\aaron\\desktop\\capstone\\databaselayer\\databaselayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\realestatescrapemvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:realestatescrapemvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\scraper.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\propertysearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\propertysearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\clientrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataBaseLayer",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\DataBaseLayer.csproj",
+              "RelativeDocumentMoniker": "..\\DataBaseLayer\\DataBaseLayer.csproj",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\DataBaseLayer.csproj",
+              "RelativeToolTip": "..\\DataBaseLayer\\DataBaseLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-12T18:50:30.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientRequest.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\ClientRequest.cs",
+              "RelativeDocumentMoniker": "..\\Scraper\\ClientRequest.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\ClientRequest.cs",
+              "RelativeToolTip": "..\\Scraper\\ClientRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T18:44:59.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Scraper.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Scraper.cs",
+              "RelativeDocumentMoniker": "..\\Scraper\\Scraper.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Scraper.cs",
+              "RelativeToolTip": "..\\Scraper\\Scraper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T18:44:16.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Scraper",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Scraper.csproj",
+              "RelativeDocumentMoniker": "..\\Scraper\\Scraper.csproj",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Scraper.csproj",
+              "RelativeToolTip": "..\\Scraper\\Scraper.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-12T18:43:47.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RealEstateScrapeMVC",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\RealEstateScrapeMVC.csproj",
+              "RelativeDocumentMoniker": "RealEstateScrapeMVC.csproj",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\RealEstateScrapeMVC.csproj",
+              "RelativeToolTip": "RealEstateScrapeMVC.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-12T18:43:33.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PropertyContext.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\PropertyContext.cs",
+              "RelativeDocumentMoniker": "..\\DataBaseLayer\\PropertyContext.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\PropertyContext.cs",
+              "RelativeToolTip": "..\\DataBaseLayer\\PropertyContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T18:23:50.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PropertyModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertyModel.cs",
+              "RelativeDocumentMoniker": "Models\\PropertyModel.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertyModel.cs",
+              "RelativeToolTip": "Models\\PropertyModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T16:47:00.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-24T17:00:01.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PropertySearchModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertySearchModel.cs",
+              "RelativeDocumentMoniker": "Models\\PropertySearchModel.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertySearchModel.cs",
+              "RelativeToolTip": "Models\\PropertySearchModel.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAzwBUAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T17:29:11.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T14:41:04.643Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
