@@ -2,13 +2,11 @@
 using System.Data;
 using RealEstateScrapeMVC.Models;
 
-namespace DataBaseLayer
+namespace DataAccessLayer
 {
     public class PropertyContext : DbContext
     {
-        public DbSet<PropertyModel> PropertyModels { get; set; }
-
-        public DbSet<PropertySearchModel> PropertySearchModels {  get; set; }  
+        public DbSet<PropertyModel> PropertyModels { get; set; }  
 
         public string DbPath { get; }
 

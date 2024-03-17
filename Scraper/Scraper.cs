@@ -1,37 +1,36 @@
-﻿using DataBaseLayer;
+﻿using DataAccessLayer;
 using HtmlAgilityPack;
-using System;
-using System.Diagnostics.Metrics;
-using RealEstateScrapeMVC.Models;
+using RES.DAL.Entities;
+
 
 
 namespace Scraper
 {
-    public class Scraper
+    public class Scraper : IScraper
     {
         public List<string> CompleteUrl(List<string> countyList)
         {
             List<string> completeCountyUrl = new List<string>();
 
+            int pageSize = 3;
+
             foreach (var county in countyList)
             {
-                string countyUrl = $"https://www.joehaydenrealtor.com/{county}-county-ky/";
+                for (int pageNum = 1; pageNum <= pageSize; pageNum++)
+                {
 
-                completeCountyUrl.Add(countyUrl);
+                    string countyUrl = $"https://www.joehaydenrealtor.com/{county}-county-ky/?pg={pageNum}";
 
-                string countyUrlSecondPage = $"https://www.joehaydenrealtor.com/{county}-county-ky/?pg=2";
+                    completeCountyUrl.Add(countyUrl);
 
-                completeCountyUrl.Add(countyUrlSecondPage);
-
-                string countyUrlThirdPage = $"https://www.joehaydenrealtor.com/{county}-county-ky/?pg=3";
-
-                completeCountyUrl.Add(countyUrlThirdPage);
+                }
             }
 
             return completeCountyUrl;
         }
         public async Task<List<string>> ScrapeListingUrls(List<string> completeCountyUrl)
         {
+            HtmlHandling htmlHandling = new HtmlHandling();
 
             List<string> allListingUrls = new List<string>();
 
@@ -39,9 +38,9 @@ namespace Scraper
             {
                 string htmlContent = await ClientRequest.MakeHttpRequestAsync(county);
 
-                HtmlDocument htmlDocument = HtmlHandling.CreateHtmlDoc(htmlContent);
+                HtmlDocument htmlDocument = htmlHandling.CreateHtmlDoc(htmlContent);
 
-                List<string> listingUrls = HtmlHandling.ParseHtmlForListingUrls(htmlDocument);
+                List<string> listingUrls = htmlHandling.ParseHtmlForListingUrls(htmlDocument);
 
                 allListingUrls.AddRange(listingUrls);              
             }
@@ -51,6 +50,8 @@ namespace Scraper
 
         public async Task ScrapeListingInfo(List<string> allListingUrls)
         {
+            HtmlHandling htmlHandling = new HtmlHandling();
+
             using (PropertyContext propertyContext = new PropertyContext())
 
             {
@@ -58,9 +59,9 @@ namespace Scraper
                 {
                     string htmlContent = await ClientRequest.MakeHttpRequestAsync(listingUrl);
 
-                    HtmlDocument htmlDocument = HtmlHandling.CreateHtmlDoc(htmlContent);
+                    HtmlDocument htmlDocument = htmlHandling.CreateHtmlDoc(htmlContent);
 
-                    PropertyModel propertyModel = HtmlHandling.ParseIndividualListingInfo(htmlDocument);
+                    PropertyModel propertyModel = htmlHandling.ParseIndividualListingInfo(htmlDocument);
 
                     Console.WriteLine(propertyModel.Address);
 

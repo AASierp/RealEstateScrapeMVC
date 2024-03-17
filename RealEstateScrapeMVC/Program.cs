@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using RealEstateScrapeMVC.Models;
 
 namespace RealEstateScrapeMVC
@@ -6,6 +7,7 @@ namespace RealEstateScrapeMVC
     {
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -35,5 +37,6 @@ namespace RealEstateScrapeMVC
 
             app.Run();
         }
+
     }
 }

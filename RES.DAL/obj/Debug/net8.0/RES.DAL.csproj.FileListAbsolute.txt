@@ -1,0 +1,15 @@
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.csproj.AssemblyReference.cache
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.AssemblyInfoInputs.cache
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.AssemblyInfo.cs
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.csproj.CoreCompileInputs.cache
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.sourcelink.json
+C:\Users\aaron\Desktop\CapStone\RES.DAL\bin\Debug\net8.0\RES.DAL.deps.json
+C:\Users\aaron\Desktop\CapStone\RES.DAL\bin\Debug\net8.0\RES.DAL.runtimeconfig.json
+C:\Users\aaron\Desktop\CapStone\RES.DAL\bin\Debug\net8.0\RES.DAL.dll
+C:\Users\aaron\Desktop\CapStone\RES.DAL\bin\Debug\net8.0\RES.DAL.pdb
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.dll
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\refint\RES.DAL.dll
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.pdb
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\RES.DAL.genruntimeconfig.cache
+C:\Users\aaron\Desktop\CapStone\RES.DAL\obj\Debug\net8.0\ref\RES.DAL.dll

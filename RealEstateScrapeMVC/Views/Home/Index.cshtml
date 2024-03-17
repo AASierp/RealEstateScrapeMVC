@@ -7,7 +7,7 @@
     <h1 class="display-4">Welcome To Real Estate Scrape</h1>
     <h2 class="display-8"> This application allows you to search the most recent real estate listings in Kentucky by the following criteria: </h2>
     <br />
-    <form action ="/home/create" method="post">
+    <form asp-contoller="Home" asp-action="Create" method="post">
       <div class="form-group">
         <label for="County">County</label>
             @Html.DropDownListFor(x =>x.County, Model.CountyList, "Select a County", new { @class= "form-control"})

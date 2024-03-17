@@ -1,7 +1,10 @@
+using DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RealEstateScrapeMVC.Models;
 using System.Diagnostics;
+
+
 
 
 namespace RealEstateScrapeMVC.Controllers
@@ -9,10 +12,11 @@ namespace RealEstateScrapeMVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private readonly PropertyContext _propertyContext;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _propertyContext = new PropertyContext();
         }
 
         public IActionResult SearchResults()
@@ -31,22 +35,21 @@ namespace RealEstateScrapeMVC.Controllers
             return View(propertySearchModel);
         }
 
+        [HttpPost]
+        public IActionResult Create(PropertySearchModel propertySearchModel)
+        {
+            // Perform property search using the provided search criteria
+            var propertyRepository = new PropertyRepository(_propertyContext);
+            var searchResults = propertyRepository.SearchPropertiesByPriceAsync(propertySearchModel).Result;
+
+            // Pass the search results to the view
+            return View("SearchResults", searchResults);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [HttpPost]
-        public IActionResult Create(PropertySearchModel propertySearchModel)
-        {
-           /* using (PropertyContext db = new PropertyContext())
-            {
-                db.Add(county);
-                db.SaveChanges();
-            }*/
-
-            return View();
         }
     }
 }

@@ -6862,9 +6862,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\DataBaseLayer.csproj",
-      "projectName": "DataBaseLayer",
-      "projectPath": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\DataBaseLayer.csproj",
+      "projectUniqueName": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\RES.DAL.csproj",
+      "projectName": "RES.DAL",
+      "projectPath": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\RES.DAL.csproj",
       "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aaron\\Desktop\\CapStone\\DataBaseLayer\\obj\\",
       "projectStyle": "PackageReference",

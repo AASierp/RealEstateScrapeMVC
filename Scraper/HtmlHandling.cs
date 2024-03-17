@@ -1,13 +1,14 @@
 ﻿using HtmlAgilityPack;
-using System.Net.Http;
+using RES.DAL.Entities;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 
 namespace Scraper
 {
-    public class HtmlHandling
+    public class HtmlHandling : IHtmlHandling
     {
-        public static HtmlDocument CreateHtmlDoc(string htmlContent)
+        public HtmlDocument CreateHtmlDoc(string htmlContent)
         {
             HtmlDocument htmlDocument = new HtmlDocument();
 
@@ -16,7 +17,7 @@ namespace Scraper
             return htmlDocument;
         }
 
-        public static List<string> ParseHtmlForListingUrls(HtmlDocument htmlDocument)
+        public List<string> ParseHtmlForListingUrls(HtmlDocument htmlDocument)
         {
 
             //Selects nodes by Tag from HTML doc and adds them to a node list (in this case all the URLs).
@@ -31,7 +32,7 @@ namespace Scraper
             return allListingUrls;
         }
 
-        public static PropertyModels ParseIndividualListingInfo(HtmlDocument htmlDocument)
+        public PropertyModel ParseIndividualListingInfo(HtmlDocument htmlDocument)
         {
             List<HtmlNode> propertyInfoNodes = new List<HtmlNode>
         {
@@ -44,7 +45,7 @@ namespace Scraper
             htmlDocument.DocumentNode.SelectSingleNode("//div[@class='si-ld-primary__info clearfix']")
         };
 
-            PropertyModels propertyModel = new PropertyModels();
+            PropertyModel propertyModel = new PropertyModel();
 
             List<string> listingInfoTrimmed = new List<string>();
 
@@ -59,12 +60,30 @@ namespace Scraper
             if (listingInfoTrimmed.Count >= 7)
             {
                 propertyModel.Address = listingInfoTrimmed[0];
-                propertyModel.Price = listingInfoTrimmed[1];
+                string price = listingInfoTrimmed[1];
                 propertyModel.DateListed = listingInfoTrimmed[2];
                 string sqft = listingInfoTrimmed[3];
                 string lot = listingInfoTrimmed[4];
                 propertyModel.Description = listingInfoTrimmed[5];
                 string county = listingInfoTrimmed[6];
+
+                string priceNoComma;
+                string priceNoDollar;
+
+                if (!string.IsNullOrEmpty(price))
+                {
+                    priceNoComma = price.Replace(",", "");
+                    priceNoDollar = priceNoComma.Replace("$", "");
+
+                    if (int.TryParse(priceNoDollar, out int priceRaw))
+                    {
+                        propertyModel.Price = priceRaw;
+                    }
+                    else
+                    {
+                        propertyModel.Price = 0;
+                    }
+                }
 
                 HtmlNode urlNode = htmlDocument.DocumentNode.SelectSingleNode("//link[@rel='canonical']");
                 string url = urlNode.GetAttributeValue("href", "");
@@ -89,8 +108,31 @@ namespace Scraper
                 Match match3 = Regex.Match(county, pattern3);
                 county = match3.Groups[1].Value;
 
-                propertyModel.SquareFeet = sqft;
-                propertyModel.LotSize = lot;
+                if (double.TryParse(lot, out double lotDouble))
+                {
+                    propertyModel.LotSize = lotDouble;
+                }
+                else
+                {
+                    propertyModel.LotSize = 0;
+                }
+
+                string sqftNoComma;
+
+                if (!string.IsNullOrEmpty(sqft))
+                {
+                    sqftNoComma = sqft.Replace(",", "");
+
+                    if (int.TryParse(sqftNoComma, out int sqftInt))
+                    {
+                        propertyModel.SquareFeet = sqftInt;
+                    }
+                }
+                else
+                {
+                    propertyModel.SquareFeet = 0;
+                }
+
                 propertyModel.County = county;
                 propertyModel.Url = url;
             }

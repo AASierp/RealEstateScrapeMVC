@@ -1,7 +1,45 @@
-﻿
+﻿@model IEnumerable<RES.DAL.Entities.PropertyModel>
+
 @{
     ViewData["Title"] = "SearchResults";
 }
 
-<h1>SearchResults</h1>
+<h1>Search Results</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No results found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Price</th>
+                <th>Square Feet</th>
+                <th>Lot Size</th>
+                <th>County</th>
+                <th>Date Listed</th>
+                <th>Address</th>
+                <th>Description</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var property in Model)
+            {
+                <tr>
+                    <td>@property.Price</td>
+                    <td>@property.SquareFeet</td>
+                    <td>@property.LotSize</td>
+                    <td>@property.County</td>
+                    <td>@property.DateListed</td>
+                    <td>@property.Address</td>
+                    <td>@property.Description</td>
+                    <td>@property.Url</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 

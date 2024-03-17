@@ -12,8 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataBaseLayer\DataBaseLayer.csproj" />
-    <ProjectReference Include="..\RealEstateScrapeMVC\RealEstateScrapeMVC.csproj" />
+    <ProjectReference Include="..\RES.DAL\RES.DAL.csproj" />
   </ItemGroup>
 
 </Project>
