@@ -7,7 +7,7 @@ namespace Scraper
 {
     internal interface IHtmlHandling
     {
-        public HtmlDocument CreateHtmlDoc(string htmlContent);
+        public HtmlDocument CreateHtmlDoc(string content);
 
         public List<string> ParseHtmlForListingUrls(HtmlDocument htmlDocument);
 

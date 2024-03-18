@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\wwwroot\\images\\pexels-pixabay-280221.jpg",
+      "PackagePath": "staticwebassets\\images\\pexels-pixabay-280221.jpg"
+    },
+    {
       "Id": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

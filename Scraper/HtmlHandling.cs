@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Scraper
 {
-    public class HtmlHandling : IHtmlHandling
+    public class HtmlHandling<T> : IHtmlHandling
     {
         public HtmlDocument CreateHtmlDoc(string htmlContent)
         {

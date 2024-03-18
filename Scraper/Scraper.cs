@@ -30,7 +30,7 @@ namespace Scraper
         }
         public async Task<List<string>> ScrapeListingUrls(List<string> completeCountyUrl)
         {
-            HtmlHandling htmlHandling = new HtmlHandling();
+            HtmlHandling<string> htmlHandling = new HtmlHandling<string>();
 
             List<string> allListingUrls = new List<string>();
 
@@ -50,7 +50,7 @@ namespace Scraper
 
         public async Task ScrapeListingInfo(List<string> allListingUrls)
         {
-            HtmlHandling htmlHandling = new HtmlHandling();
+            HtmlHandling<string> htmlHandling = new HtmlHandling<string>();
 
             using (PropertyContext propertyContext = new PropertyContext())
 

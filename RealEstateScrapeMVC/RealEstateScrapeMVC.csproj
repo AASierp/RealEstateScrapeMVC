@@ -20,5 +20,9 @@
     <ProjectReference Include="..\RES.DAL\RES.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\pexels-pixabay-280221.jpg" />
+  </ItemGroup>
+
 
 </Project>

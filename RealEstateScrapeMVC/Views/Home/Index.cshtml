@@ -1,11 +1,27 @@
 ﻿@model RealEstateScrapeMVC.Models.PropertySearchModel
+
 @{
     ViewData["Title"] = "Real Estate Scrape";
 }
 
+<style>
+    body {
+        background-image: url('/images/pexels-pixabay-280221.jpg');
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center;
+        height: 100hv;
+        margin: 0;
+        h1,h2{
+        color: white;
+        }
+    }
+</style>
+
 <div class="text-center">
+    
     <h1 class="display-4">Welcome To Real Estate Scrape</h1>
-    <h2 class="display-8"> This application allows you to search the most recent real estate listings in Kentucky by the following criteria: </h2>
+    <h2 class="display-8"> This application allows you to search the most recent real estate listings in central Kentucky by the following criteria: </h2>
     <br />
     <form asp-contoller="Home" asp-action="Create" method="post">
       <div class="form-group">

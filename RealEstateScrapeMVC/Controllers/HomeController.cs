@@ -1,10 +1,7 @@
 using DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using RealEstateScrapeMVC.Models;
 using System.Diagnostics;
-
-
 
 
 namespace RealEstateScrapeMVC.Controllers
@@ -27,6 +24,7 @@ namespace RealEstateScrapeMVC.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -39,8 +37,8 @@ namespace RealEstateScrapeMVC.Controllers
         public IActionResult Create(PropertySearchModel propertySearchModel)
         {
             // Perform property search using the provided search criteria
-            var propertyRepository = new PropertyRepository(_propertyContext);
-            var searchResults = propertyRepository.SearchPropertiesByPriceAsync(propertySearchModel).Result;
+            PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
+            var searchResults = propertyRepository.SearchPropertiesAsync(propertySearchModel).Result;
 
             // Pass the search results to the view
             return View("SearchResults", searchResults);

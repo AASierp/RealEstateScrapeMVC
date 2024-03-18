@@ -1,0 +1,53 @@
+﻿Add Comments through out program
+Add Logger in Scraper - log to DB Table?
+Beautify Views
+Use a Generic Somewhere
+Use a Raw sql string query somewhere
+
+
+
+CapStone Requirements Checklist -
+
+1. Upload to Github At least 5 unique commits
+
+2. Include a README file explaining your project.
+Describe your project in a paragraph or more.
+Identify 3+ features from the provided list that you've integrated.
+Add any special instructions for the reviewer to run your project.
+
+3. Design your project to be visually appealing; follow industry trends.
+Aim to create projects that employers find attractive and engaging.
+Explore other websites for inspiration. Emulate styles and functionalities you find compelling.
+Select a color palette and font stack to enhance design consistency.
+
+4. Develop at least one class (excluding the default class in a new project),
+create an object of that class, populate it with data from a database, and incorporate the data in
+your application. A minimum of 1 table (entity) should be utilized. Note that classes should be
+created even when using object relational mappers like Entity Framework.
+
+5. Create and utilize a minimum of 3 functions or methods, with at least one  - COMPLETE
+returning a value integral to your application. 
+
+Features List
+
+1. Create 3 or more unit tests for your application
+
+2. Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
+
+3. Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program - COMPLETE
+
+4. Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
+
+5. Add comments to your code explaining how you are using at least 2 of the solid principles
+
+6. Make a generic class and use it
+
+7. Make your application an API
+
+8. Make your application a CRUD API
+
+9. Make your application asynchronous - COMPLETE
+
+10. Have 2 or more tables (entities) in your application that are related and have a function return data from both entities.  In entity framework, this is equivalent to a join
+
+11. Query your database using a raw SQL query, not EF

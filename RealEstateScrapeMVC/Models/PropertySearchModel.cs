@@ -1,14 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace RealEstateScrapeMVC.Models
 {
     public class PropertySearchModel
     {
+        [Required(ErrorMessage = "County selection is required.")]
         public string County { get; set; }
+
+        [Required]
 
         public List<SelectListItem> CountyList = new List<SelectListItem>()
         {
-
+          
             new SelectListItem {Value = "Anderson", Text = "Anderson"},
             new SelectListItem {Value = "Bourbon", Text = "Bourbon"},
             new SelectListItem {Value = "Boyle", Text = "Boyle"},
@@ -27,77 +31,42 @@ namespace RealEstateScrapeMVC.Models
 
         };
 
-        public int UserPriceRange { get; set; }
-
-        public const int MinPriceOne = 0;
-        public const int MaxPriceOne = 250000;
-        public const int MaxPriceTwo = 450000;
-        public const int MaxPriceThree = 650000;
-        public const int MaxPriceFour = 850000;
-        public const int MaxPriceFive = 1000000;
-
-        public const int PriceOptionOne = 0;
-        public const int PriceOptionTwo = 1;
-        public const int PriceOptionThree = 2;
-        public const int PriceOptionFour = 3;
-        public const int PriceOptionFive = 4;
+        public string UserPriceRange { get; set; }
 
         public List<SelectListItem> PriceRanges = new List<SelectListItem>()
         {
-            new SelectListItem {Value = $"{PriceOptionOne}", Text = $"$0 - $250,000"},
-            new SelectListItem {Value = $"{PriceOptionTwo}", Text = "$250,000 - $450,000"},
-            new SelectListItem {Value = $"{PriceOptionThree}", Text = "$450,000 - $650,000"},
-            new SelectListItem {Value = $"{PriceOptionFour}", Text = "$650,000 - $850,000"},
-            new SelectListItem {Value = $"{PriceOptionFive}", Text = "$850,000 - $1,000,000"},
+            new SelectListItem {Value = "0 - 99999999", Text = "Any" },
+            new SelectListItem {Value = "0 - 250000", Text = "$0 - $250,000"},
+            new SelectListItem {Value = "250000 - 450000", Text = "$250,000 - $450,000"},
+            new SelectListItem {Value = "450000 - 650000", Text = "$450,000 - $650,000"},
+            new SelectListItem {Value = "650000 - 850000", Text = "$650,000 - $850,000"},
+            new SelectListItem {Value = "850000 - 1000000", Text = "$850,000 - $1,000,000"},
         };
 
 
-        public int UserSqft { get; set; }
-
-        public const int MinSqftOne = 0;
-        public const int MaxSqftOne = 1000;
-        public const int MaxSqftTwo = 2000;
-        public const int MaxSqftThree = 3000;
-        public const int MaxSqftFour = 4000;
-        public const int MaxSqftFive = 5000;
-
-        public const int SqftOptionOne = 0;
-        public const int SqftOptionTwo = 1;
-        public const int SqftOptionThree = 2;
-        public const int SqftOptionFour = 3;
-        public const int SqftOptionFive = 4;
-
+        public string UserSqft { get; set; }
 
         public List<SelectListItem> SqftRanges = new List<SelectListItem>()
         {
-            new SelectListItem { Value = $"{SqftOptionOne}", Text = "0 - 1,000 sqft"},
-            new SelectListItem { Value = $"{SqftOptionTwo}", Text = "1,000 - 2,000 sqft"},
-            new SelectListItem { Value = $"{SqftOptionThree}", Text = "2,000 - 3,000 sqft" },
-            new SelectListItem { Value = $"{SqftOptionFour}", Text = "3,000 - 4,000 sqft" },
-            new SelectListItem { Value = $"{SqftOptionFive}", Text = "4,000 - 5,000 sqft" },
+            new SelectListItem {Value = "0 - 99999999", Text = "Any" },
+            new SelectListItem { Value = "0 - 1000", Text = "0 - 1,000 sqft"},
+            new SelectListItem { Value = "1000 - 2000", Text = "1,000 - 2,000 sqft"},
+            new SelectListItem { Value = "2000 - 3000", Text = "2,000 - 3,000 sqft" },
+            new SelectListItem { Value = "3000 - 4000", Text = "3,000 - 4,000 sqft" },
+            new SelectListItem { Value = "4000 - 5000", Text = "4,000 - 5,000 sqft" },
         };
 
-        public int UserLotSize { get; set; }
 
-        public const double MinLotSizeOne = 0;
-        public const double MaxLotSizeOne = 2;
-        public const double MaxLotSizeTwo = 5;
-        public const double MaxLotSizeThree = 10;
-        public const double MaxLotSizeFour = 100;
-
-        public const int LotSizeOptionOne = 0;
-        public const int LotSizeOptionTwo = 1;
-        public const int LotSizeOptionThree = 2;
-        public const int LotSizeOptionFour = 3;
+        public string UserLotSize { get; set; }
 
         public List<SelectListItem> LotSizeRanges = new List<SelectListItem>()
         {
-            new SelectListItem {Value = $"{LotSizeOptionOne}", Text = "0 - 2 acres"},
-            new SelectListItem {Value = $"{LotSizeOptionTwo}", Text = "2 - 5 acres"},
-            new SelectListItem {Value = $"{LotSizeOptionThree}", Text = "5 - 10 acres"},
-            new SelectListItem {Value = $"{LotSizeOptionFour}", Text = "10 - 100 acres"},
+             new SelectListItem {Value = "0 - 99999999", Text = "Any" },
+             new SelectListItem {Value =  "0 - 2", Text = "0 - 2 acres"},
+             new SelectListItem {Value =  "2 - 5", Text = "2 - 5 acres"},
+             new SelectListItem {Value =  "5 - 10", Text = "5 - 10 acres"},
+             new SelectListItem {Value = "10 - 100", Text = "10 - 100 acres"},
         };
     }
 }
 
-//new SelectListItem { Value = $"{minPriceOne} - {maxPriceOne}", Text = $"$0 - $250,000" },

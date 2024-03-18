@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2o3v8zyEIO4kYRt35cM0lfxCaM0QiRsrsSF+XIggN5c=",
+  "Hash": "db9I4qUaY2Yily2DpLYIMTwWLRlmD8ItFnfWv7Mpw1A=",
   "Source": "RealEstateScrapeMVC",
   "BasePath": "_content/RealEstateScrapeMVC",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\wwwroot\\images\\pexels-pixabay-280221.jpg",
+      "SourceId": "RealEstateScrapeMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\wwwroot\\",
+      "BasePath": "_content/RealEstateScrapeMVC",
+      "RelativePath": "images/pexels-pixabay-280221.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pexels-pixabay-280221.jpg"
     },
     {
       "Identity": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\wwwroot\\js\\site.js",
