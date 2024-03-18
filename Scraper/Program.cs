@@ -10,9 +10,8 @@
 
                 List<string> countyList = new List<string>()
                 {
-                    "Anderson", "Fayette", "Madison", "Clark", "Scott", "Montgomery",
-                    "Jessamine", "Franklin", "Bourbon", "Mercer", "Garrard", "Estill", 
-                    "Boyle", "Harrison", "Woodford"
+                    "Anderson", "Bourbon", "Boyle", "Clark", "Estill", "Fayette", "Franklin", "Garrard",
+                    "Harrison", "Jessamine", "Madison", "Mercer", "Montgomery", "Scott", "Woodford"
                 };
 
             List<string> completeCountyUrls = scraper.CompleteUrl(countyList);

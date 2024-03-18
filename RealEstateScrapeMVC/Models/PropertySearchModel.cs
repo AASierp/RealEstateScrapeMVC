@@ -5,10 +5,8 @@ namespace RealEstateScrapeMVC.Models
 {
     public class PropertySearchModel
     {
-        [Required(ErrorMessage = "County selection is required.")]
+        
         public string County { get; set; }
-
-        [Required]
 
         public List<SelectListItem> CountyList = new List<SelectListItem>()
         {

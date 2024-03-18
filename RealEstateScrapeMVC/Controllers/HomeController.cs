@@ -36,11 +36,11 @@ namespace RealEstateScrapeMVC.Controllers
         [HttpPost]
         public IActionResult Create(PropertySearchModel propertySearchModel)
         {
-            // Perform property search using the provided search criteria
+            
             PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
             var searchResults = propertyRepository.SearchPropertiesAsync(propertySearchModel).Result;
 
-            // Pass the search results to the view
+            
             return View("SearchResults", searchResults);
         }
 
