@@ -40,6 +40,7 @@ namespace RealEstateScrapeMVC.Controllers
             PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
             var searchResults = propertyRepository.SearchPropertiesAsync(propertySearchModel).Result;
 
+
             
             return View("SearchResults", searchResults);
         }

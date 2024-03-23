@@ -4,11 +4,80 @@
     ViewData["Title"] = "SearchResults";
 }
 
-<h1>Search Results</h1>
+
+<style>
+	body {
+		background-image: url('/images/pexels-charles-parker-5847764.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100;
+		margin-top: 50px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: wheat;
+	}
+
+	* {
+		text-shadow: 2px 2px 4px black; /* Adjust these values as needed */
+	}
+
+	h1, h2, p {
+		color: wheat;
+		font-weight: bold;
+	}
+
+	tr {
+		color: wheat;
+		background: rgba(0, 0, 0, 0.8);
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+
+
+	form {
+		margin-top: 50px;
+		margin-bottom: 600px;
+		color: wheat;
+		font-size: 36px;
+		font-weight: bold;
+	}
+
+	.container{
+		text-align: center;
+	}
+
+	th {
+		font-size: 22px;
+		color: white;
+	}
+	
+
+    }
+	
+}
+	
+</style>
+
+
+
+
+<h1 style ="padding-left: 95px;">Search Results</h1>
+<br />
 
 @if (Model == null || !Model.Any())
 {
-    <p>No results found.</p>
+	<p style="padding-left: 95px;" >No results found.</p>
 }
 else
 {
@@ -22,21 +91,21 @@ else
                 <th>Date Listed</th>
                 <th>Address</th>
                 <th>Description</th>
-                <th>URL</th>
+                <th>Listing URL</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var property in Model)
             {
                 <tr>
-                    <td>@property.Price</td>
-                    <td>@property.SquareFeet</td>
-                    <td>@property.LotSize</td>
-                    <td>@property.County</td>
-                    <td>@property.DateListed</td>
-                    <td>@property.Address</td>
-                    <td>@property.Description</td>
-                    <td>@property.Url</td>
+					<td style="border-right: 1px solid white;">@string.Format("{0:C}", property.Price)</td>
+					<td style="border-right: 1px solid white;">@property.SquareFeet Sq/Ft</td>
+					<td style="border-right: 1px solid white;">@property.LotSize Acres</td>
+					<td style="border-right: 1px solid white;">@property.County County</td>
+					<td style="border-right: 1px solid white;">@property.DateListed</td>
+					<td style="border-right: 1px solid white;">Address: @property.Address</td>
+					<td style="border-right: 1px solid white;">Property Description: @property.Description</td>
+					<td style="border-right: 1px solid white;">Listing Link: <a href="@property.Url">@property.Url</a></td>
                 </tr>
             }
         </tbody>
