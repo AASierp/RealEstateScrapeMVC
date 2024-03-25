@@ -1,154 +1,49 @@
-﻿Add Comments through out program
-Add Logger in Scraper - log to DB Table?
-Beautify Views
-Use a Generic Somewhere
-Use a Raw sql string query somewhere
-
-
+﻿
 
 CapStone Requirements Checklist -
 
-1. Upload to Github At least 5 unique commits - COMPLETE
+1. COMPLETE - Upload to Github At least 5 unique commits
 
 2. Include a README file explaining your project.
 Describe your project in a paragraph or more.
 Identify 3+ features from the provided list that you've integrated.
 Add any special instructions for the reviewer to run your project.
 
-3. Design your project to be visually appealing; follow industry trends.
+3. COMPLETE - Design your project to be visually appealing; follow industry trends.
 Aim to create projects that employers find attractive and engaging.
-Explore other websites for inspiration. Emulate styles and functionalities you find compelling.
+Explore other websites for inspiration. Emulate styles and functionalities you find compelling.  
 Select a color palette and font stack to enhance design consistency.
 
-4. Develop at least one class (excluding the default class in a new project),
-create an object of that class, populate it with data from a database, and incorporate the data in - COMPLETE
+4. COMPLETE - Develop at least one class (excluding the default class in a new project),
+create an object of that class, populate it with data from a database, and incorporate the data in 
 your application. A minimum of 1 table (entity) should be utilized. Note that classes should be
 created even when using object relational mappers like Entity Framework. 
 
-5. Create and utilize a minimum of 3 functions or methods, with at least one  - COMPLETE
+5. COMPLETE - Create and utilize a minimum of 3 functions or methods, with at least one 
 returning a value integral to your application. 
 
 Features List
 
-1. Create 3 or more unit tests for your application
+1. COMPLETE - Create 3 or more unit tests for your application
 
-2. Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
+2. NA - Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
 
-3. Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program - COMPLETE
+3. COMEPLETE - Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
 
 4. Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
 
-5. Add comments to your code explaining how you are using at least 2 of the solid principles
+5. COMPLETE - Add comments to your code explaining how you are using at least 2 of the solid principles
 
-6. Make a generic class and use it
+6. COMPLETE - Make a generic class and use it
 
-7. Make your application an API
+7. NA - Make your application an API
 
-8. Make your application a CRUD API
+8. NA - Make your application a CRUD API
 
-9. Make your application asynchronous - COMPLETE
+9. COMPLETE - Make your application asynchronous
 
 10. Have 2 or more tables (entities) in your application that are related and have a function return data from both entities.  In entity framework, this is equivalent to a join
 
 11. Query your database using a raw SQL query, not EF
 
 
-@model RealEstateScrapeMVC.Models.PropertySearchModel
-
-@{
-	ViewData["Title"] = "Real Estate Scrape";
-}
-
-<style>
-	body {
-		background-image: url('/images/pexels-pixabay-280221.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		height: 100;
-		margin-top: 50px;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		
-	}
-
-	.content{
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		color: wheat;
-	}
-
-	* {
-		text-shadow: 3px 3px 5px black; /* Adjust these values as needed */
-	}
-
-	h1, h2{
-		color: wheat;
-		font-weight: bold;
-	}
-
-
-
-	form{
-
-		margin-top: 100px;
-		margin-bottom: 550px;
-		color: darkseagreen;
-		font-size: 36px;
-		font-weight: bold;
-
-	}
-
-	select {
-		color: cadetblue;
-	}
-
-	
-	
-	}
-
-
-</style>
-
-<div class="text-center">
-
-
-	<h1 class="display-3">Welcome To Real Estate Scrape</h1>
-	<h2 class="display-5"> This application allows you to search the most recent real estate listings in central Kentucky by the following criteria: </h2>
-	<br />
-	<form asp-contoller="Home" asp-action="Create" method="post">
-		<div class="form-group">
-			<label for="County">County</label>
-			@Html.DropDownListFor(x => x.County, Model.CountyList, "Select a County", new { @class = "form-control" })
-
-		</div>
-		<br />
-		<div class="form-group">
-			<label for="PriceRange">Price Range</label>
-			@Html.DropDownListFor(x => x.UserPriceRange, Model.PriceRanges, "Select a Price range", new { @class = "form-control" })
-
-		</div>
-		<br />
-		<div class="form-group">
-			<label for="Sqft">Sqft</label>
-			@Html.DropDownListFor(x => x.UserSqft, Model.SqftRanges, "Select a Sqft Range", new { @class = "form-control" })
-
-		</div>
-		<br />
-		<div class="form-group">
-			<label for="LotSize">Lot Size</label>
-			@Html.DropDownListFor(x => x.UserLotSize, Model.LotSizeRanges, "Select a Lot Size", new { @class = "form-control" })
-
-		</div>
-		<br />
-		<div>
-			<button type="Submit" class="btn btn-primary">Submit</button>
-		</div>
-
-
-	</form>
-</div>

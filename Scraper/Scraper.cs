@@ -6,9 +6,16 @@ using RES.DAL.Entities;
 
 namespace Scraper
 {
-    public class Scraper : IScraper
+
+	// This class follows Single Responsibility Principle (SRP) by focusing on one responsibility:
+	// scraping real estate data. It implements IScraper for abstraction.
+	public class Scraper : IScraper
     {
-        public List<string> CompleteUrl(List<string> countyList)
+
+		// This method follows Open/Closed Principle (OCP) as it can be extended easily by adding more counties
+		// without modifying the existing code. It takes a list of county names and constructs URLs to scrape data.
+		// It doesn't need modification for changes like adding more counties.
+		public List<string> CompleteUrl(List<string> countyList)
         {
             List<string> completeCountyUrl = new List<string>();
 
@@ -28,7 +35,11 @@ namespace Scraper
 
             return completeCountyUrl;
         }
-        public async Task<List<string>> ScrapeListingUrls(List<string> completeCountyUrl)
+
+		// This method follows Dependency Inversion Principle (DIP) by depending on abstractions (interfaces)
+		// rather than concrete implementations. It accepts a list of URLs to scrape, regardless of how those URLs
+		// are obtained or what kind of HTML handling or HTTP client is used.
+		public async Task<List<string>> ScrapeListingUrls(List<string> completeCountyUrl)
         {
             HtmlHandling<string> htmlHandling = new HtmlHandling<string>();
 
@@ -73,8 +84,10 @@ namespace Scraper
                     }
 
                     await propertyContext.SaveChangesAsync();
-                }             
-            }
+                }
+
+				Console.WriteLine("Scraping complete, all properties have beeen added to the Database... \n");
+			}
         }
     }
 }

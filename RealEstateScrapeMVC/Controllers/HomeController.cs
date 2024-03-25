@@ -40,12 +40,11 @@ namespace RealEstateScrapeMVC.Controllers
             PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
             var searchResults = propertyRepository.SearchPropertiesAsync(propertySearchModel).Result;
 
-
-            
-            return View("SearchResults", searchResults);
+			return View("SearchResults", searchResults);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

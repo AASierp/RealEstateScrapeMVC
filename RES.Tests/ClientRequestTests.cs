@@ -1,13 +1,8 @@
-﻿using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Scraper;
 
 namespace RES.Tests
 {
-    [TestClass]
+	[TestClass]
     public class ClientRequestTests
     {
         [TestMethod]
@@ -15,10 +10,22 @@ namespace RES.Tests
         {
             //Arrange 
 
-            string url = "https://testurl.com";
-            string htmlContent = "<html><body>Test Content</body></html>;";
+            string url = "https://www.wikipedia.org/";
 
-            var mockHttpClient = new Mock<HttpClient>();
+            string expectedHtmlContent = "<meta name=\"description\" content=\"Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.\">";
+
+            Random random = new Random();
+
+            HttpClient httpClient = new HttpClient();
+
+            //Act
+
+            var htmlContent = await ClientRequest.MakeHttpRequestAsync(url);
+
+            //Assert
+
+            Assert.IsTrue(htmlContent.Contains(expectedHtmlContent));
+            
         }
     }
 }

@@ -4,7 +4,7 @@ using RES.DAL.Entities;
 
 namespace RealEstateScrapeMVC.Models
 {
-    public class PropertyRepository
+    public class PropertyRepository : IPropertyRepository
     {
         private readonly PropertyContext _propertyContext;
 
@@ -13,54 +13,7 @@ namespace RealEstateScrapeMVC.Models
             _propertyContext = propertyContext;
         }
 
-        /*public async Task<IEnumerable<PropertyModel>> SearchPropertiesByCountyAsync(PropertySearchModel propertySearchModel)
-        {
-            string selectedCounty = propertySearchModel.County;
-
-            IQueryable<PropertyModel> queryCounty = _propertyContext.PropertyModels.Where(x => x.County == selectedCounty);
-
-            return await queryCounty.ToListAsync();
-        }
-
-        public async Task<IEnumerable<PropertyModel>> SearchPropertiesByPriceAsync(PropertySearchModel propertySearchModel)
-        {
-
-            string selectedPriceRange = propertySearchModel.UserPriceRange;
-
-            string[] priceBoundaries = selectedPriceRange.Split(" - ");
-            int minPrice = int.Parse(priceBoundaries[0]);
-            int maxPrice = int.Parse(priceBoundaries[1]);
-
-            IQueryable<PropertyModel> queryPrice = _propertyContext.PropertyModels
-            .Where(x => x.Price >= minPrice && x.Price <= maxPrice);
-
-            return await queryPrice.ToListAsync();
-
-        }
-
-        public async Task<IEnumerable<PropertyModel>> SearchPropertiesBySqftAsync(PropertySearchModel propertySearchModel)
-        {
-            string selectedSqft = propertySearchModel.UserSqft;
-            string[] sqftBoundaries = selectedSqft.Split(" - ");
-            int minSqft = int.Parse(sqftBoundaries[0]);
-            int maxSqft = int.Parse(sqftBoundaries[1]);
-
-            IQueryable<PropertyModel> querySqft = _propertyContext.PropertyModels.Where(x => x.SquareFeet >= minSqft && x.SquareFeet <= maxSqft);
-
-            return await querySqft.ToListAsync();
-        }
-
-        public async Task<IEnumerable<PropertyModel>> SearchPropertiesByLotSizeAsync(PropertySearchModel propertySearchModel)
-        {
-            string selectedLotSize = propertySearchModel.UserLotSize;
-            string[] lotSizeBoundaries = selectedLotSize.Split(" - ");
-            double minLotsize = double.Parse(lotSizeBoundaries[0]);
-            double maxLotSize = double.Parse(lotSizeBoundaries[1]);
-
-            IQueryable<PropertyModel> queryLotSize = _propertyContext.PropertyModels.Where(x => x.LotSize >= minLotsize && x.LotSize <= maxLotSize);
-
-            return await queryLotSize.ToListAsync();
-        }*/
+        
 
         public async Task<IEnumerable<PropertyModel>> SearchPropertiesAsync(PropertySearchModel propertySearchModel)
         {
@@ -94,6 +47,22 @@ namespace RealEstateScrapeMVC.Models
             
             return await query.ToListAsync();
         }
+
+        /*public async Task<double?> SearchPriceRawSql(PropertySearchModel searchModel)
+        {
+            // Raw Sql String
+            string sqlQuery = "SELECT Price FROM PropertyModels";
+
+            var prices = await _propertyContext.PropertyModels
+                .FromSqlRaw(sqlQuery)
+                .ToListAsync();
+
+            var pricesSum = prices.Sum(x => x.Price);
+
+            var priceAverage = pricesSum / (double)prices.Count;
+
+            return priceAverage;
+        }*/
 
     }
 }
