@@ -6,7 +6,7 @@ namespace RealEstateScrapeMVC.Models
 	public class PropertySearchModel
 	{
 		[Required(ErrorMessage = "Please select a county.")]
-		public string County { get; set; }
+		public string? County { get; set; }
 
 		public List<SelectListItem> CountyList = new List<SelectListItem>()
 		{
@@ -30,7 +30,7 @@ namespace RealEstateScrapeMVC.Models
 		};
 
 		[Required(ErrorMessage = "Please select a price range.")]
-		public string UserPriceRange { get; set; }
+		public string? UserPriceRange { get; set; }
 
 		public List<SelectListItem> PriceRanges = new List<SelectListItem>()
 		{
@@ -43,7 +43,7 @@ namespace RealEstateScrapeMVC.Models
 		};
 
 		[Required(ErrorMessage = "Please select a square footage range.")]
-		public string UserSqft { get; set; }
+		public string? UserSqft { get; set; }
 
 		public List<SelectListItem> SqftRanges = new List<SelectListItem>()
 		{
@@ -56,7 +56,7 @@ namespace RealEstateScrapeMVC.Models
 		};
 
 		[Required(ErrorMessage = "Please select a lot size range.")]
-		public string UserLotSize { get; set; }
+		public string? UserLotSize { get; set; }
 
 		public List<SelectListItem> LotSizeRanges = new List<SelectListItem>()
 		{
