@@ -36,8 +36,13 @@ namespace RealEstateScrapeMVC.Controllers
         [HttpPost]
         public IActionResult Create(PropertySearchModel propertySearchModel)
         {
-            
-            PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
+			if (string.IsNullOrEmpty(propertySearchModel.County) || string.IsNullOrEmpty(propertySearchModel.UserPriceRange)
+				|| string.IsNullOrEmpty(propertySearchModel.UserSqft) || string.IsNullOrEmpty(propertySearchModel.UserLotSize))
+			{
+				return RedirectToAction("SearchResults");
+			}
+
+			PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
             var searchResults = propertyRepository.SearchPropertiesAsync(propertySearchModel).Result;
 
 			return View("SearchResults", searchResults);

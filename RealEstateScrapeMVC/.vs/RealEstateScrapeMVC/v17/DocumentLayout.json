@@ -6,26 +6,34 @@
       "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\propertysearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\propertysearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\propertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\views\\home\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:views\\home\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\ipropertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\ipropertyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\propertysearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\propertysearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C2D04DD-4BAE-450D-ABEF-176DE33BD07F}|..\\RES.DAL\\RES.DAL.csproj|c:\\users\\aaron\\desktop\\capstone\\res.dal\\entities\\propertymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BAC3375-0767-43D6-85B5-1645F1D00AF5}|..\\RES.Tests\\RES.Tests.csproj|c:\\users\\aaron\\desktop\\capstone\\res.tests\\clientrequesttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -34,12 +42,7 @@
       "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\htmlhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|c:\\users\\aaron\\desktop\\capstone\\realestatescrapemvc\\models\\searchresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD948272-58AA-40E7-AFCB-FA9785EC9F73}|RealEstateScrapeMVC.csproj|solutionrelative:models\\searchresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2146438F-277C-4263-AF84-85E7C5D1E3AD}|..\\Scraper\\Scraper.csproj|c:\\users\\aaron\\desktop\\capstone\\scraper\\textfile1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,7 +52,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,32 +60,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "SearchResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Views\\Home\\SearchResults.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\SearchResults.cshtml",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Views\\Home\\SearchResults.cshtml",
+              "RelativeToolTip": "Views\\Home\\SearchResults.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAADwvx4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-25T14:00:25.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PropertyModel.cs",
+              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RES.DAL\\Entities\\PropertyModel.cs",
+              "RelativeDocumentMoniker": "..\\RES.DAL\\Entities\\PropertyModel.cs",
+              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RES.DAL\\Entities\\PropertyModel.cs",
+              "RelativeToolTip": "..\\RES.DAL\\Entities\\PropertyModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T13:39:21.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Scraper.cs",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Scraper.cs",
               "RelativeDocumentMoniker": "..\\Scraper\\Scraper.cs",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Scraper.cs",
               "RelativeToolTip": "..\\Scraper\\Scraper.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAwwC8AAAA4AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-23T23:15:02.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SearchResultViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\SearchResultViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\SearchResultViewModel.cs",
-              "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\SearchResultViewModel.cs",
-              "RelativeToolTip": "Models\\SearchResultViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-23T23:04:28.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ClientRequestTests.cs",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RES.Tests\\ClientRequestTests.cs",
               "RelativeDocumentMoniker": "..\\RES.Tests\\ClientRequestTests.cs",
@@ -90,45 +105,43 @@
               "RelativeToolTip": "..\\RES.Tests\\ClientRequestTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-23T19:46:02.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-23T19:46:02.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "HtmlHandling.cs",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\HtmlHandling.cs",
               "RelativeDocumentMoniker": "..\\Scraper\\HtmlHandling.cs",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\HtmlHandling.cs",
               "RelativeToolTip": "..\\Scraper\\HtmlHandling.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAAwIQAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-23T19:25:37.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAwwCEAAAAWAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAxwGIAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-18T20:33:01.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "TextFile1.txt",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\TextFile1.txt",
               "RelativeDocumentMoniker": "..\\Scraper\\TextFile1.txt",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\TextFile1.txt",
               "RelativeToolTip": "..\\Scraper\\TextFile1.txt",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-18T17:58:39.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T17:58:39.546Z"
             },
             {
               "$type": "Document",
@@ -138,7 +151,7 @@
               "RelativeDocumentMoniker": "..\\Scraper\\Program.cs",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\Scraper\\Program.cs",
               "RelativeToolTip": "..\\Scraper\\Program.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAwwDYAAAAAAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAwwD8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T17:34:56.333Z",
               "EditorCaption": ""
@@ -151,40 +164,37 @@
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCEAAAAJAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAcwCkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T17:08:56.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T17:08:56.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "PropertySearchModel.cs",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertySearchModel.cs",
               "RelativeDocumentMoniker": "Models\\PropertySearchModel.cs",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertySearchModel.cs",
               "RelativeToolTip": "Models\\PropertySearchModel.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAIwBEAAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T17:08:38.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T17:08:38.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PropertyRepository.cs",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertyRepository.cs",
               "RelativeDocumentMoniker": "Models\\PropertyRepository.cs",
               "ToolTip": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\PropertyRepository.cs",
               "RelativeToolTip": "Models\\PropertyRepository.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAIwDgAAAAlAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwDcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T17:07:47.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T17:07:47.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "IPropertyRepository.cs",
               "DocumentMoniker": "C:\\Users\\aaron\\Desktop\\CapStone\\RealEstateScrapeMVC\\Models\\IPropertyRepository.cs",
               "RelativeDocumentMoniker": "Models\\IPropertyRepository.cs",
@@ -192,8 +202,7 @@
               "RelativeToolTip": "Models\\IPropertyRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T16:08:06.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-16T16:08:06.412Z"
             }
           ]
         }

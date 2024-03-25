@@ -1,11 +1,11 @@
 ﻿namespace Scraper
 {
-    internal class Program
-    {
+	internal class Program
+	{
 
-        public static async Task Main(string[] args)
-        {
-			
+		public static async Task Main(string[] args)
+		{
+
 			List<string> countyList = new List<string>()
 				{
 					"anderson", "bourbon", "boyle", "clark", "estill", "fayette", "franklin", "garrard",
@@ -14,27 +14,37 @@
 
 			List<string> userCounties = new List<string>();
 
-			Console.WriteLine("Select an option from the following menu.\n");
-			Console.WriteLine("Press 1 to choose which counties to scrape.\n");
-			Console.WriteLine("Press 2 to scrape the entire list of counties.\n");
+			bool isValid = false;
 
-			string userInput = Console.ReadLine();
 
-			if (int.TryParse(userInput, out int option))
+			while (!isValid)
 			{
-				switch (option)
+
+				Console.WriteLine("Select an option from the following menu.\n");
+				Console.WriteLine("Press 1 to choose which counties to scrape.\n");
+				Console.WriteLine("Press 2 to scrape the entire list of counties.\n");
+
+				string userInput = Console.ReadLine();
+
+
+				if (int.TryParse(userInput, out int option))
 				{
-					case 1:
-						await UserSelectedCounties(countyList, userCounties);
-						break;
-					case 2:
-						await ScrapeAllCounties(countyList);
-						break;
+					switch (option)
+					{
+						case 1:
+							await UserSelectedCounties(countyList, userCounties);
+							isValid = true;
+							break;
+						case 2:
+							await ScrapeAllCounties(countyList);
+							isValid = true;
+							break;
+						default:
+							Console.WriteLine("That is not a valid selection \n");
+							break;
+					}
 				}
-			}
-			else
-			{
-				Console.WriteLine("That is not a valid selection, please try again.\n");
+
 			}
 		}
 
@@ -52,14 +62,15 @@
 			Console.WriteLine("\n");
 			do
 			{
-
 				userSelection = Console.ReadLine().ToLower();
 
 				if (countyList.Contains(userSelection))
 				{
+
 					userCounties.Add(userSelection);
 
 					Console.WriteLine($"{userSelection} has been added to the list.\n");
+
 				}
 				else if (userSelection.ToLower() == "run")
 				{

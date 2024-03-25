@@ -36,16 +36,32 @@ namespace RealEstateScrapeMVC.Models
             int minLotSize = int.Parse(lotSizeBoundaries[0]);
             int maxLotSize = int.Parse(lotSizeBoundaries[1]);
 
-            
-            IQueryable<PropertyModel> query = _propertyContext.PropertyModels
-                .Where(x => x.County == selectedCounty &&
-                            x.Price >= minPrice && x.Price <= maxPrice &&
-                            x.SquareFeet >= minSqft && x.SquareFeet <= maxSqft &&
-                            x.LotSize >= minLotSize && x.LotSize <= maxLotSize)
-                .OrderBy(x =>x.Price);
 
-            
-            return await query.ToListAsync();
+            IQueryable<PropertyModel> query = _propertyContext.PropertyModels;
+
+				if (selectedCounty == "All")
+			{
+                query = _propertyContext.PropertyModels
+                    .Where(x =>
+                        x.Price >= minPrice && x.Price <= maxPrice &&
+                        x.SquareFeet >= minSqft && x.SquareFeet <= maxSqft &&
+                        x.LotSize >= minLotSize && x.LotSize <= maxLotSize)
+                    .OrderBy(x => x.County)
+                    .ThenBy(x => x.Price);
+			}
+			else
+			{
+				query = _propertyContext.PropertyModels
+					.Where(x =>
+						x.County == selectedCounty &&
+						x.Price >= minPrice && x.Price <= maxPrice &&
+						x.SquareFeet >= minSqft && x.SquareFeet <= maxSqft &&
+						x.LotSize >= minLotSize && x.LotSize <= maxLotSize)
+					.OrderBy(x => x.Price);
+			}
+
+
+			return await query.ToListAsync();
         }
 
         /*public async Task<double?> SearchPriceRawSql(PropertySearchModel searchModel)

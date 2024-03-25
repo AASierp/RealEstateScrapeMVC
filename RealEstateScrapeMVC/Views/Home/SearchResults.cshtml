@@ -28,12 +28,18 @@
 	}
 
 	* {
-		text-shadow: 2px 2px 4px black; /* Adjust these values as needed */
+		text-shadow: 2px 2px 4px black; 
 	}
 
-	h1, h2, p {
+	h1, h2 {
 		color: wheat;
 		font-weight: bold;
+	}
+
+	p {
+		color: white;
+		font-weight: bold;
+		font-size: 32px;
 	}
 
 	tr {
@@ -77,7 +83,7 @@
 
 @if (Model == null || !Model.Any())
 {
-	<p style="padding-left: 95px;" >No results found.</p>
+	<p style="padding-left: 95px;" >You did not make a selection for each field, please return home and try again.</p>
 }
 else
 {

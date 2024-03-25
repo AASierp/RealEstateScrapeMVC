@@ -35,6 +35,9 @@ namespace RES.DAL.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Img")
+                        .HasColumnType("TEXT");
+
                     b.Property<double?>("LotSize")
                         .HasColumnType("REAL");
 
