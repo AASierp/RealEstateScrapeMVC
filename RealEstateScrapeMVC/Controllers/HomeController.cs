@@ -1,5 +1,6 @@
 using DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RealEstateScrapeMVC.Models;
 using System.Diagnostics;
 
@@ -33,14 +34,19 @@ namespace RealEstateScrapeMVC.Controllers
             return View(propertySearchModel);
         }
 
-        [HttpPost]
-        public IActionResult Create(PropertySearchModel propertySearchModel)
+        [HttpGet]
+        public IActionResult Search(PropertySearchModel propertySearchModel)
         {
-			if (string.IsNullOrEmpty(propertySearchModel.County) || string.IsNullOrEmpty(propertySearchModel.UserPriceRange)
-				|| string.IsNullOrEmpty(propertySearchModel.UserSqft) || string.IsNullOrEmpty(propertySearchModel.UserLotSize))
-			{
-				return RedirectToAction("SearchResults");
-			}
+            if(!ModelState.IsValid)
+            {
+                return View("Index", propertySearchModel);
+            }
+
+            propertySearchModel.UserLotSize ??= propertySearchModel.LotSizeRanges.First().Value;
+            propertySearchModel.UserPriceRange ??= propertySearchModel.PriceRanges.First().Value;
+			propertySearchModel.UserSqft ??= propertySearchModel.SqftRanges.First().Value;
+			propertySearchModel.County ??= propertySearchModel.CountyList.First().Value;
+            
 
 			PropertyRepository propertyRepository = new PropertyRepository(_propertyContext);
             var searchResults = propertyRepository.SearchPropertiesAsync(propertySearchModel).Result;
