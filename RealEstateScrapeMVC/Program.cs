@@ -1,9 +1,6 @@
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using RealEstateScrapeMVC.Models;
-
 namespace RealEstateScrapeMVC
 {
-    public class Program
+	public class Program
     {
         public static void Main(string[] args)
         {

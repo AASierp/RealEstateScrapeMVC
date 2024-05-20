@@ -1,13 +1,12 @@
 using DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RealEstateScrapeMVC.Models;
 using System.Diagnostics;
 
 
 namespace RealEstateScrapeMVC.Controllers
 {
-    public class HomeController : Controller
+	public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly PropertyContext _propertyContext;

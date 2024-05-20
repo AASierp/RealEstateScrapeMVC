@@ -13,8 +13,6 @@ namespace RealEstateScrapeMVC.Models
             _propertyContext = propertyContext;
         }
 
-        
-
         public async Task<IEnumerable<PropertyModel>> SearchPropertiesAsync(PropertySearchModel propertySearchModel)
         {
             
@@ -63,22 +61,5 @@ namespace RealEstateScrapeMVC.Models
 
 			return await query.ToListAsync();
         }
-
-        /*public async Task<double?> SearchPriceRawSql(PropertySearchModel searchModel)
-        {
-            // Raw Sql String
-            string sqlQuery = "SELECT Price FROM PropertyModels";
-
-            var prices = await _propertyContext.PropertyModels
-                .FromSqlRaw(sqlQuery)
-                .ToListAsync();
-
-            var pricesSum = prices.Sum(x => x.Price);
-
-            var priceAverage = pricesSum / (double)prices.Count;
-
-            return priceAverage;
-        }*/
-
     }
 }

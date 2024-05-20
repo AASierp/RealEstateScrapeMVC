@@ -1,6 +1,5 @@
 ﻿using HtmlAgilityPack;
 using RES.DAL.Entities;
-using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 
@@ -28,7 +27,7 @@ namespace Scraper
 			List<string> homeListingLinks = allPageLinks.Select(link => link.Attributes["data-url"].Value).ToList();
 
 			//concatenates url to make a usable link.
-			List<string> allListingUrls = homeListingLinks.Select(link => "https://www.joehaydenrealtor.com" + link).ToList();
+			List<string> allListingUrls = homeListingLinks.Select(link => "REAL ESTATE WEBSITE ROOT ADDRESS" + link).ToList();
 
 			return allListingUrls;
 		}

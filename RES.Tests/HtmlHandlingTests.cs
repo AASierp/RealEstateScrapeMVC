@@ -47,8 +47,8 @@ namespace RES.Tests
             //Assert
             Assert.IsNotNull(listingUrls);
             Assert.AreEqual(2, listingUrls.Count);
-            Assert.IsTrue(listingUrls.Contains("https://www.joehaydenrealtor.com/homes/100-kensington-place-richmond-ky/"));
-            Assert.IsTrue(listingUrls.Contains("https://www.joehaydenrealtor.com/homes/123-old-farm-rd-richmond-ky/"));
+            Assert.IsTrue(listingUrls.Contains("REAL ESTATE LISTING COMPLETE ADDRESS"));
+            Assert.IsTrue(listingUrls.Contains("REAL ESTATE LISTING COMPLETE ADDRESS"));
         }
     }
 }
