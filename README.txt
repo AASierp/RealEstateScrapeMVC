@@ -2,7 +2,7 @@ Real Estate Scrape
 
 IMPORTANT -------------------------------------------------------------------------------------------------------------------------------
 
-   I wrote this application as capstone project for c# bootcamp. I utilized a local real estate agency's website to scrape data from. They agreed to allow me to use their site, strictly for the purposes
+   I wrote this application as capstone project for a c# bootcamp. I utilized a local real estate agency's website to scrape data from. They agreed to allow me to use their site, strictly for the purposes
 of the project. Now that the bootcamp has concluded, I have scrubbed the their website from the code to prevent the slim possibility that this program could be used to abuse their generousity. Thus, rendering this 
 program inoperable. However, If you are a programmer or someone interested in scraping. It should be fairly easy to glean the effectiveness of this code by reviewing it. 
 
