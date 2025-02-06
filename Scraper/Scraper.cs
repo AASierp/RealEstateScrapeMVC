@@ -20,7 +20,7 @@ namespace Scraper
                 for (int pageNum = 1; pageNum <= pageSize; pageNum++)
                 {
 
-                    string countyUrl = $"REAL ESTATE WEBSITE ROOT ADDRESS{county}-county-ky/?pg={pageNum}";
+                    string countyUrl = $"https://www.joehaydenrealtor.com/{county}-county-ky/?pg={pageNum}";
 
                     completeCountyUrl.Add(countyUrl);
 
